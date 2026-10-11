@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#fff5f6">
+  <title>วันครบรอบ 💓</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="phone">
+  <section class="heart-transition hidden" id="heartTransition" aria-live="polite">
+    <p>กำลังส่งความรักให้เธอ…</p>
+    <div class="orbit-heart" aria-hidden="true"><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span></div>
+    <div class="orbit-center" aria-hidden="true">♥</div>
+  </section>
+
+  <section class="scan-page" id="scanPage">
+    <h1>วางนิ้วตรงนี้ 💓</h1>
+  <div class="mascot" aria-hidden="true">
+  <svg viewBox="0 0 180 190" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="fur" x2=".2" y2="1">
+        <stop stop-color="#fffdfd"/>
+        <stop offset="1" stop-color="#f7e7e9"/>
+      </linearGradient>
+      <linearGradient id="heart" x2=".8" y2="1">
+        <stop stop-color="#ff9fb2"/>
+        <stop offset="1" stop-color="#e85c7a"/>
+      </linearGradient>
+      <filter id="soft">
+        <feDropShadow dx="0" dy="4" stdDeviation="3"
+          flood-color="#c56b7e" flood-opacity=".18"/>
+      </filter>
+    </defs>
+
+    <!-- ประกายตกแต่ง -->
+    <path d="M26 45q3 9 12 12-9 3-12 12-3-9-12-12 9-3 12-12Zm130 15q2 7 9 9-7 2-9 9-2-7-9-9 7-2 9-9Z"
+      fill="#f5b6c2"/>
+    <path d="M143 31c0 5 4 9 9 9-5 0-9 4-9 9 0-5-4-9-9-9 5 0 9-4 9-9Z"
+      fill="#f4d17d"/>
+
+    <!-- หูน้องหมีและตัวน้องหมี -->
+    <g filter="url(#soft)" stroke="#76555a" stroke-width="3.3" stroke-linejoin="round">
+      <path d="M55 64C44 40 45 12 57 11c13-1 20 26 21 45M119 57c7-25 20-44 31-38 12 7 1 32-12 52"
+        fill="url(#fur)"/>
+      <path d="M58 45c-2-12-2-22 1-23 4-1 9 11 12 22m60 11c5-10 11-19 14-17 4 2-2 13-7 22"
+        fill="#f4b9c4" stroke="none"/>
+      <path d="M37 79c0-25 20-42 51-42 33 0 56 20 56 48v43c0 26-21 43-53 43-33 0-54-17-54-44Z"
+        fill="url(#fur)"/>
+    </g>
+
+    <!-- หน้าน้องหมี -->
+    <ellipse cx="68" cy="88" rx="7" ry="5" fill="#f2a1b1"/>
+    <ellipse cx="116" cy="88" rx="7" ry="5" fill="#f2a1b1"/>
+    <circle cx="77" cy="77" r="3.5" fill="#574448"/>
+    <circle cx="108" cy="77" r="3.5" fill="#574448"/>
+    <path d="M87 84q5-5 10 0-1 6-5 6t-5-6Zm5 7q-5 7-11 2m11-2q5 7 11 2"
+      fill="none" stroke="#76555a" stroke-width="2.6" stroke-linecap="round"/>
+
+    <!-- น้องหมีถือหัวใจ -->
+    <path d="M58 111c-16 4-22 17-17 29 4 11 16 13 27 6m54-35c15 4 21 17 16 29-4 11-16 13-27 6"
+      fill="none" stroke="#76555a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M91 151c-7-6-26-20-26-34 0-14 17-19 26-7 9-12 26-7 26 7 0 14-19 28-26 34Z"
+      fill="url(#heart)" stroke="#d95370" stroke-width="2.5"/>
+    <path d="M75 115q2-7 8-7" fill="none" stroke="#fff" stroke-width="3"
+      stroke-linecap="round" opacity=".8"/>
+  </svg>
+
+</div>
+    <p class="hint" id="hint">แตะค้างที่ลายนิ้วมือเพื่อเริ่มสแกน 💓</p>
+    <div class="down-arrow">⌄</div>
+
+<div class="scanner" id="scanner" role="button" tabindex="0"
+     aria-label="แตะค้างที่ลายนิ้วมือเพื่อสแกน">
+  <div class="scanner-dots"></div>
+  <div class="scan-beam"></div>
+
+  <svg class="fingerprint" viewBox="0 0 160 180" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3.3">
+      <path d="M80 14C44 14 21 40 21 75c0 15 4 25 8 35M80 25C50 25 32 46 32 75c0 15 4 27 8 39M80 36C57 36 43 53 43 76c0 17 6 29 10 42M80 47C64 47 54 59 54 77c0 18 7 30 11 43M80 58c-10 0-16 7-16 19 0 18 8 30 13 44M80 14c36 0 59 26 59 61 0 19-5 32-12 47M80 25c30 0 48 21 48 50 0 18-5 31-12 45M80 36c23 0 37 17 37 40 0 17-5 31-12 44M80 47c16 0 26 12 26 30 0 16-5 30-11 43M80 58c10 0 15 8 15 20 0 16-5 29-10 42M28 75c0 32 15 52 24 70M39 77c0 28 15 46 22 61M50 78c0 23 13 39 19 51M132 76c0 31-14 51-23 69M121 78c0 27-14 44-21 59M110 79c0 22-12 37-18 49M80 69c-6 0-9 5-9 12 0 16 8 29 12 40M80 69c6 0 9 5 9 12 0 16-8 29-12 40"/>
+    </g>
+  </svg>
+
+  <div class="progress-ring">
+    <span id="progressLabel">แตะค้าง</span>
+  </div>
+</div>
+<p style="margin-top: 35px; font-size: 20px;">
+  มีอะไรรอเซอร์ไพรส์อยู่น้าา ♡
+</p>
+  </section>
+
+  <section class="surprise hidden" id="surprise">
+    <div class="mini-heart">♥</div><p class="eyebrow">OUR ANNIVERSARY</p>
+    <!-- จุดแก้ข้อความในโค้ด: เปลี่ยนประโยคด้านล่างนี้ได้เลย -->
+    <h2>สแกนพบความรัก<br>เต็มหัวใจเลย!</h2> <video class="featured-video" autoplay muted loop playsinline>
+  <source src="sob.mov" type="video/mp4">
+</video>
+    <div class="love-meter"><div class="love-fill"></div></div>
+    <p class="percent">ความรักของเรา <strong>100%</strong></p>
+    <div class="note">
+      <p id="messageTitle">สุขสันต์วันครบรอบน้าาเบบี๋ 2 ปี 2 เดือนแล้วน้าา ♥</p>
+      <p id="messageOne"><br></p>
+      <p id="messageTwo">เค้าขอโทษน้าาที่ทำให้เบบี๋โกดหลายๆรอบ เค้าขอโทษน้าบางทีที่เค้าไม่ฟัง เค้าจะอยู่กับเบบี๋ตลอดปายย เพราะว่าเค้าร้ากกเบบี๋มากกๆเลยย<br></p>
+      <p class="sign" id="messageSign">เค้าร้ากกเบบี๋ที่สุดใน 3 โลกก ♥</p>
+      <div class="video-gallery">
+  <video autoplay muted loop playsinline><source src="3fing.mov" type="video/mp4"></video>
+  <video autoplay muted loop playsinline><source src="2fing.mov" type="video/mp4"></video>
+  <video autoplay muted loop playsinline><source src="live.mov" type="video/mp4"></video>
+  <video autoplay muted loop playsinline><source src="water.mov" type="video/mp4"></video>
+</div>
+    </div>
+
+   <div class="love-question" id="loveQuestion">
+  <p class="love-question-text" id="loveQuestionText">เบบี๋ร้ากกเค้าม้ายย</p>
+
+  <div class="love-answer-buttons" id="loveAnswerButtons">
+    <button type="button" id="loveYes">ร้ากกมากกๆ</button>
+    <button type="button" id="loveNo">ไม่รัก</button>
+  </div>
+</div>
+
+    <form class="message-editor hidden" id="messageEditor">
+      <label>ประโยคเปิด<textarea id="editTitle" rows="2"></textarea></label>
+      <label>ข้อความที่หนึ่ง<textarea id="editOne" rows="3"></textarea></label>
+      <label>ข้อความที่สอง<textarea id="editTwo" rows="3"></textarea></label>
+      <label>คำลงท้าย<textarea id="editSign" rows="2"></textarea></label>
+      <div class="editor-actions"><button type="submit">บันทึกข้อความ</button><button type="button" id="resetMessages">คืนข้อความเดิม</button></div>
+      <p class="editor-help">ข้อความที่บันทึกจะจำไว้ในเบราว์เซอร์เครื่องนี้</p>
+    </form>
+  
+   <button class="edit-toggle" id="editToggle" type="button">ใส่ปีเพื่อดูระยะเวลาที่คบกัน</button>
+    <form class="date-form hidden" id="dateForm">
+      <label>วันที่เริ่มคบกัน<input id="startDate" type="date" required></label>
+      <label>วันเซอร์ไพรส์<input id="surpriseDate" type="date" required></label>
+      <button type="submit">คำนวณวันครบรอบ</button><p id="dateResult" aria-live="polite"></p>
+    </form>
+    <button class="again" id="again" type="button">สแกนอีกครั้ง ♡</button>
+  </section>
+</main>
+<div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+<script src="script.js"></script>
+</body>
+</html>
